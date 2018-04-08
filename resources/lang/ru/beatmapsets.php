@@ -50,7 +50,7 @@ return [
             ],
             'favourite' => 'Добавить в избранное',
             'unfavourite' => 'Удалить из избранного',
-            'favourited_count' => '+ 1 другой! | + :count других!',
+            'favourited_count' => '+ 1 другой!|+ :count других!',
         ],
         'stats' => [ // TODO: нужен перевод лучше, намного.
             'cs' => 'Размер нот',
@@ -97,7 +97,7 @@ return [
                 'pp' => 'pp',
                 'rank' => 'Ранг',
                 'score_total' => 'Всего очков',
-                'score' => 'Storyboard',
+                'score' => 'Очки',
             ],
             'no_scores' => [
                 'country' => 'Никто из Вашей страны ещё не играл в эту карту!',
