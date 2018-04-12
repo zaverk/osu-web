@@ -21,7 +21,7 @@
 return [
     'mail' => [
         'donation_thanks' => [
-            'subject' => 'Спасибо, osu! любит тебя',
+            'subject' => 'Спасибо, osu! любит вас',
         ],
         'supporter_gift' => [
             'subject' => 'У вас появился osu!supporter тег!',
