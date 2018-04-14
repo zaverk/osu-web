@@ -20,13 +20,13 @@
 
 return [
     'event' => [
-        'approve' => 'Approved.',
-        'discussion_delete' => 'Moderator deleted discussion :discussion.',
-        'discussion_post_delete' => 'Moderator deleted post from discussion :discussion.',
-        'discussion_post_restore' => 'Moderator restored post from discussion :discussion.',
-        'discussion_restore' => 'Moderator restored discussion :discussion.',
-        'disqualify' => 'Disqualified by :user. Reason: :text.',
-        'issue_reopen' => 'Resolved issue :discussion reopened.',
+        'approve' => 'Одобрено.',
+        'discussion_delete' => 'Модератор удалил обсуждение :discussion.',
+        'discussion_post_delete' => 'Модератор удалил публикацию из обсуждения :discussion.',
+        'discussion_post_restore' => 'Модератор восстановил публикацию в обсуждении :discussion.',
+        'discussion_restore' => 'Модератор восстановил обсуждение :discussion.',
+        'disqualify' => 'дисквалифицирована :user. Причина: :text.',
+        'issue_reopen' => 'Проблема решена :discussion reopened.',
         'issue_resolve' => 'Issue :discussion marked as resolved.',
         'kudosu_allow' => 'Kudosu denial for discussion :discussion has been removed.',
         'kudosu_deny' => 'Discussion :discussion denied for kudosu.',
