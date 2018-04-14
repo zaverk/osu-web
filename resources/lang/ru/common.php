@@ -32,8 +32,11 @@ return [
         'cancel' => 'Отмена',
         'delete' => 'Удалить',
         'permalink' => 'прямая ссылка',
+        'permalink_copied' => 'ссылка скопирована',
         'post' => 'Публикация',
         'reply' => 'Ответить',
+        'reply_reopen' => 'Ответить и возобновить',
+        'reply_resolve' => 'Ответить и разрешить',
         'reset' => 'Сбросить',
         'save' => 'Сохранить',
         'saving' => 'Сохранение...',
@@ -43,9 +46,25 @@ return [
     ],
 
     'count' => [
+        'badges' => ':count значок|:count значков',
+        'days' => ':count день|:count дней',
+        'hour_short_unit' => 'ч|ч',
+        'hours' => ':count час|:count часов',
         'item' => ':count единица|:count единиц',
+        'minute_short_unit' => 'мин|мин',
         'months' => ':count месяц|:count месяцев|:count месяцев',
+        'second_short_unit' => 'сек|сек',
         'years' => ':count год|:count лет|:count лет',
+    ],
+
+    'datetime' => [
+        'year_month' => [
+            'moment' => 'ММММ ГГГГ',
+            'php' => 'ММММ Г',
+        ],
+        'year_month_short' => [
+            'moment' => 'МММ ГГГГ',
+        ],
     ],
 
     'device' => [
