@@ -48,22 +48,22 @@ return [
     'count' => [
         'badges' => ':count значок|:count значков',
         'days' => ':count день|:count дней',
-        'hour_short_unit' => 'ч|ч',
+        'hour_short_unit' => 'ч',
         'hours' => ':count час|:count часов',
         'item' => ':count единица|:count единиц',
-        'minute_short_unit' => 'мин|мин',
+        'minute_short_unit' => 'мин',
         'months' => ':count месяц|:count месяцев|:count месяцев',
-        'second_short_unit' => 'сек|сек',
+        'second_short_unit' => 'сек',
         'years' => ':count год|:count лет|:count лет',
     ],
 
     'datetime' => [
         'year_month' => [
-            'moment' => 'ММММ ГГГГ',
-            'php' => 'ММММ Г',
+            'moment' => 'MMMM YYYY',
+            'php' => 'MMMM y',
         ],
         'year_month_short' => [
-            'moment' => 'МММ ГГГГ',
+            'moment' => 'MMM YYYY',
         ],
     ],
 
