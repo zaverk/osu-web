@@ -30,23 +30,23 @@ return [
         ],
         'status' => [
             'not_checkout' => 'Попытка принять оплату за заказ отклонена `:state`.',
-            'not_paid' => 'Trying to refund payment for an order in the wrong state `:state`.',
+            'not_paid' => 'Попытка возместить платеж за заказ отклонена`:state`.',
         ],
     ],
     'param' => [
-        'invalid' => '`:param` param does not match',
+        'invalid' => '`:param` Параметр не соответствует',
     ],
     'paypal' => [
-        'not_echeck' => 'Pending payment is not an echeck. (:actual)',
+        'not_echeck' => 'Ожидаемый платеж не является чеком. (:actual)',
     ],
     'purchase' => [
         'checkout' => [
-            'amount' => 'Payment amount does not match: :actual != :expected',
-            'currency' => 'Payment is not in USD. (:type)',
+            'amount' => 'Сумма платежа не соответствует: :actual != :expected',
+            'currency' => 'Оплата производится не в USD. (:type)',
         ],
     ],
     'order_number' => [
-        'malformed' => 'Received order transaction id is malformed',
-        'user_id_mismatch' => 'external_id contains wrong user id',
+        'malformed' => 'Идентификатор транзакции полученного заказа неверен',
+        'user_id_mismatch' => 'external_id содержит неправильный идентификатор пользователя',
     ],
 ];
