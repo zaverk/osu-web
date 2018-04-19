@@ -58,7 +58,7 @@ return [
         'remember' => 'Запомнить этот компьютер',
         'title' => 'Войдите для продолжения',
         'failed' => 'Неверный вход',
-        'register' => "У Вас всё ещё нет аккаунта в osu!? Создайте новый",
+        'register' => 'У Вас всё ещё нет аккаунта в osu!? Создайте новый',
         'forgot' => 'Забыли свой пароль?',
         'beta' => [
             'main' => 'Доступ к бета-версии ограничен.',
@@ -69,7 +69,7 @@ return [
     ],
 
     'posts' => [
-        'title' => ':username\'s posts',
+        'title' => 'публикации :username',
     ],
 
     'signup' => [
@@ -79,7 +79,7 @@ return [
         'login_link' => 'нажмите для входа',
         'login_text' => 'войти',
         'username' => 'Гость',
-        'error' => 'Ты должен быть авторизированным, чтобы сделать это.',
+        'error' => 'Ты должен быть авторизированным, чтобы сделать это.', // Base text changed from "log" to "sign"
     ],
     'logout_confirm' => 'Вы точно хотите выйти? :(',
     'restricted_banner' => [
@@ -101,7 +101,7 @@ return [
         'origin_country' => 'Из :country',
         'page_description' => 'osu! - Всё, что Вы хотели знать о :username!',
         'plays_with' => 'Играет с :devices',
-        'title' => "Профиль :username's",
+        'title' => 'Профиль :username',
 
         'edit' => [
             'cover' => [
@@ -112,7 +112,7 @@ return [
                     'button' => 'Загрузить изображение',
                     'dropzone' => 'Брось изображение сюда для загрузки',
                     'dropzone_info' => 'Ты также можешь перетащить изображение сюда для загрузки',
-                    'restriction_info' => "Загрузка своих обложек доступна только для <a href='".route('store.products.show', 'supporter-tag')."' target='_blank'>osu! саппортеров</a>",
+                    'restriction_info' => 'Загрузка своих обложек доступна только для <a href='".route('store.products.show', 'supporter-tag')."' target='_blank'>osu! саппортеров</a>',
                     'size_info' => 'Размер обложки должна быть 2000x700',
                     'too_large' => 'Загруженное изображение слишком большое.',
                     'unsupported_format' => 'Неподдерживаемый формат.',
@@ -171,7 +171,7 @@ return [
             ],
             'kudosu' => [
                 'available' => 'Кудосу доступны',
-                'available_info' => "Кудосу могут быть использованы для обмена между другими авторами карт, которые в свою очередь помогут привлечь к Вашей карте больше внимания. Это количество Кудосу, которые Вы не задействовали.",
+                'available_info' => 'Кудосу могут быть использованы для обмена между другими авторами карт, которые в свою очередь помогут привлечь к Вашей карте больше внимания. Это количество Кудосу, которые Вы не задействовали.',
                 'recent_entries' => 'Последние обмены',
                 'title' => 'Кудосу!',
                 'total' => 'Всего Кудосу накоплено',
@@ -179,7 +179,7 @@ return [
 
                 'entry' => [
                     'amount' => ':amount кудосу',
-                    'empty' => "Этот пользователь не обменивался Кудосу!",
+                    'empty' => 'Этот пользователь не обменивался Кудосу!',
 
                     'beatmap_discussion' => [
                         'allow_kudosu' => [
@@ -195,7 +195,7 @@ return [
                         ],
 
                         'restore' => [
-                            'give' => 'Получено  :amount за восстановление ответа в посте :post',
+                            'give' => 'Получено :amount за восстановление ответа в посте :post',
                         ],
 
                         'vote' => [
@@ -220,7 +220,7 @@ return [
                 'title' => 'обо мне!',
             ],
             'medals' => [
-                'empty' => "Этот пользователь ничего не получил. ;_;",
+                'empty' => 'Этот пользователь ничего не получил. ;_;',
                 'title' => 'Медали',
             ],
             'recent_activity' => [
@@ -240,7 +240,7 @@ return [
             ],
             'account_standing' => [
                 'title' => 'Состояние аккаунта',
-                'bad_standing' => "с аккаунтом <strong>:username's</strong> не всё хорошо :(",
+                'bad_standing' => 'с аккаунтом <strong>:username</strong> не всё хорошо :(',
                 'remaining_silence' => 'пользователю <strong>:username</strong> можно будет говорить через :duration.',
 
                 'recent_infringements' => [
@@ -273,7 +273,7 @@ return [
             'description' => '<strong>обо мне!</strong> - это твоё личное редактируемое пространство в твоём профиле.',
             'edit_big' => 'Отредактируй меня!',
             'placeholder' => 'Введи контент этой страницы',
-            'restriction_info' => "Ты должен иметь тег <a href='".route('store.products.show', 'supporter-tag')."' target='_blank'>osu!саппортера</a> для разблокировки данной особенности.",
+            'restriction_info' => 'Ты должен иметь тег <a href='".route('store.products.show', 'supporter-tag')."' target='_blank'>osu!саппортера</a> для разблокировки данной особенности.',
         ],
         'post_count' => [
             '_' => 'Написал :link',
