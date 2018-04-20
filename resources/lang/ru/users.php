@@ -21,6 +21,33 @@
 return [
     'deleted' => '[удалённый пользователь]',
 
+    'beatmapset_activities' => [
+        'discussions' => [
+            'title_recent' => 'Недавно начатые дискуссии',
+        ],
+
+        'events' => [
+            'title_recent' => 'Недавние события',
+        ],
+
+        'posts' => [
+            'title_recent' => 'Недавние публикации',
+        ],
+
+        'votes_received' => [
+            'title_most' => 'Most upvoted by (last 3 months)',
+        ],
+
+        'votes_made' => [
+            'title_most' => 'Most upvoted (last 3 months)',
+        ],
+    ],
+
+    'card' => [
+        'loading' => 'Загрузка...',
+        'send_message' => 'отправить сообщение',
+    ],
+
     'login' => [
         '_' => 'Вход',
         'locked_ip' => 'Ваш IP адрес заблокирован. Попробуйте через несколько минут.',
@@ -31,7 +58,7 @@ return [
         'remember' => 'Запомнить этот компьютер',
         'title' => 'Войдите для продолжения',
         'failed' => 'Неверный вход',
-        'register' => 'У Вас всё ещё нет аккаунта в osu!? Создайте новую',
+        'register' => 'У Вас всё ещё нет аккаунта в osu!? Создайте новый',
         'forgot' => 'Забыли свой пароль?',
         'beta' => [
             'main' => 'Доступ к бета-версии ограничен.',
@@ -40,6 +67,11 @@ return [
 
         'here' => 'тут', // this is substituted in when generating a link above. change it to suit the language.
     ],
+
+    'posts' => [
+        'title' => 'публикации :username',
+    ],
+
     'signup' => [
         '_' => 'Регистрация',
     ],
@@ -50,6 +82,10 @@ return [
         'error' => 'Ты должен быть авторизированным, чтобы сделать это.', // Base text changed from "log" to "sign"
     ],
     'logout_confirm' => 'Вы точно хотите выйти? :(',
+    'restricted_banner' => [
+        'title' => 'Ваш аккаунт был ограничен!',
+        'message' => 'Пока ваш аккаунт ограничен, вы не сможете взаимодействовать с другими игроками и ваши результаты будут видны только вам. Обычно это результат автоматизированного процесса и, как правило, ограничение снимается в течении 24 часов. Если вы хотите обжаловать ваше ограничение, пожалуйста <a href="mailto:accounts@ppy.sh">связь с поддержкой</a>.',
+    ],
     'show' => [
         '404' => 'Игрок не найден! ;_;',
         'age' => ':age лет',
@@ -76,15 +112,21 @@ return [
                     'button' => 'Загрузить изображение',
                     'dropzone' => 'Брось изображение сюда для загрузки',
                     'dropzone_info' => 'Ты также можешь перетащить изображение сюда для загрузки',
-                    'restriction_info' => "Загрузка своих обложек доступна только для <a href='".route('store.products.show', 'supporter-tag')."' target='_blank'>osu! саппортеров</a>",
+                    'restriction_info' => 'Загрузка своих обложек доступна только для <a href='".route('store.products.show', 'supporter-tag')."' target='_blank'>osu! саппортеров</a>',
                     'size_info' => 'Размер обложки должна быть 2000x700',
                     'too_large' => 'Загруженное изображение слишком большое.',
                     'unsupported_format' => 'Неподдерживаемый формат.',
                 ],
             ],
+
+            'default_playmode' => [
+                'is_default_tooltip' => 'режим игры по умолчанию',
+                'set' => 'установить :mode как режим игры по умолчанию',
+            ],
         ],
+
         'extra' => [
-            'followers' => '{1} 1 подписчик|[2,3] :count подписчика|[5,*] :count подписчиков',
+            'followers' => '{1} 1 подписчик|[2,3,4] :count подписчика|[5,*] :count подписчиков',
             'unranked' => 'Нет недавних игр',
 
             'achievements' => [
@@ -98,25 +140,37 @@ return [
                 'favourite' => [
                     'title' => 'Любимые карты (:count)',
                 ],
+                'graveyard' => [
+                    'title' => 'Заброшенные карты (:count)',
+                ],
                 'ranked_and_approved' => [
-                    'title' => 'Рейтинговые и одобренные карты (:count)',
+                    'title' => 'Ранкнутые и одобренные карты (:count)',
+                ],
+                'unranked' => [
+                    'title' => 'Ожидающие проверки (:count)',
                 ],
             ],
             'historical' => [
                 'empty' => 'Нет каких-либо записей. :(',
                 'title' => 'Хронология',
 
+                'monthly_playcounts' => [
+                    'title' => 'История игр',
+                ],
                 'most_played' => [
                     'count' => 'количество игр',
                     'title' => 'Наибольше сыгранные карты',
                 ],
                 'recent_plays' => [
                     'accuracy' => 'точность: :percentage',
-                    'title' => 'Последние игры',
+                    'title' => 'Последние игры (24ч)',
+                ],
+                'replays_watched_counts' => [
+                    'title' => 'История просмотров реплеев',
                 ],
             ],
             'kudosu' => [
-                'available' => 'Кудосу доступно',
+                'available' => 'Кудосу доступны',
                 'available_info' => 'Кудосу могут быть использованы для обмена между другими авторами карт, которые в свою очередь помогут привлечь к Вашей карте больше внимания. Это количество Кудосу, которые Вы не задействовали.',
                 'recent_entries' => 'Последние обмены',
                 'title' => 'Кудосу!',
@@ -124,7 +178,7 @@ return [
                 'total_info' => 'Исходя из того, сколько правок внёс пользователь во время модерации карт. Загляните <a href="'.osu_url('user.kudosu').'">сюда</a> для дополнительной информации.',
 
                 'entry' => [
-                    'amount' => ':amount Кудосу',
+                    'amount' => ':amount кудосу',
                     'empty' => 'Этот пользователь не обменивался Кудосу!',
 
                     'beatmap_discussion' => [
@@ -148,10 +202,16 @@ return [
                             'give' => 'Получено :amount за получение голосов в посте :post',
                             'reset' => 'Потеряно :amount за потерю голосов в посте :post',
                         ],
+
+                        'recalculate' => [
+                            'give' => 'Получено :amount за перерасчёт голосов в посте :post',
+                            'reset' => 'Потеряно :amount за перерасчёт голосов в посте :post',
+                        ],
                     ],
 
                     'forum_post' => [
                         'give' => ':giver дал :amount за ответ в посте :post',
+                        'reset' => ':giver сбросил Кудосу за ответ в посте :post',
                         'revoke' => ':giver отнял Кудосу за ответ в посте :post',
                     ],
                 ],
@@ -178,12 +238,42 @@ return [
                 'title' => 'Рейтинги',
                 'weighted_pp' => 'взвешено: :pp (:percentage)',
             ],
+            'account_standing' => [
+                'title' => 'Состояние аккаунта',
+                'bad_standing' => 'с аккаунтом <strong>:username</strong> не всё хорошо :(',
+                'remaining_silence' => 'пользователю <strong>:username</strong> можно будет говорить через :duration.',
+
+                'recent_infringements' => [
+                    'title' => 'Недавние нарушения',
+                    'date' => 'Дата',
+                    'action' => 'действие',
+                    'length' => 'продолжительность',
+                    'length_permanent' => 'Навсегда',
+                    'description' => 'описание',
+                    'actor' => ':username',
+
+                    'actions' => [
+                        'restriction' => 'Бан',
+                        'silence' => 'Сайленс',
+                        'note' => 'Заметка',
+                    ],
+                ],
+            ],
+        ],
+        'info' => [
+            'interests' => 'Интересы',
+            'lastfm' => 'Last.fm',
+            'location' => 'Текущее местоположение',
+            'occupation' => 'Род деятельности',
+            'skype' => 'Skype',
+            'twitter' => 'Twitter',
+            'website' => 'Веб-сайт',
         ],
         'page' => [
             'description' => '<strong>обо мне!</strong> - это твоё личное редактируемое пространство в твоём профиле.',
             'edit_big' => 'Отредактируй меня!',
             'placeholder' => 'Введи контент этой страницы',
-            'restriction_info' => "Ты должен иметь тег <a href='".route('store.products.show', 'supporter-tag')."' target='_blank'>osu!саппортера</a> для разблокировки данной особенности.",
+            'restriction_info' => 'Ты должен иметь тег <a href='".route('store.products.show', 'supporter-tag')."' target='_blank'>osu!саппортера</a> для разблокировки данной особенности.',
         ],
         'post_count' => [
             '_' => 'Написал :link',
@@ -201,7 +291,7 @@ return [
             'play_time' => 'Всего времени в игре',
             'ranked_score' => 'Рейтинговые очки',
             'replays_watched_by_others' => 'Реплеев просмотрено другими',
-            'score_ranks' => 'Score Ranks',
+            'score_ranks' => 'Рейтинг очков',
             'total_hits' => 'Всего попаданий',
             'total_score' => 'Всего очков',
         ],
