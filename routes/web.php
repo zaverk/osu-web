@@ -77,7 +77,6 @@ Route::get('beatmapsets/search/{filters?}', 'BeatmapsetsController@search')->nam
 Route::get('beatmapsets/{beatmapset}/discussion/{beatmap?}/{mode?}/{filter?}', 'BeatmapsetsController@discussion')->name('beatmapsets.discussion');
 Route::get('beatmapsets/{beatmapset}/download', 'BeatmapsetsController@download')->name('beatmapsets.download');
 Route::put('beatmapsets/{beatmapset}/nominate', 'BeatmapsetsController@nominate')->name('beatmapsets.nominate');
-Route::put('beatmapsets/{beatmapset}/disqualify', 'BeatmapsetsController@disqualify')->name('beatmapsets.disqualify');
 Route::post('beatmapsets/{beatmapset}/update-favourite', 'BeatmapsetsController@updateFavourite')->name('beatmapsets.update-favourite');
 Route::resource('beatmapsets', 'BeatmapsetsController', ['only' => ['index', 'show', 'update']]);
 
@@ -146,7 +145,6 @@ Route::group(['prefix' => 'home'], function () {
     Route::put('account', 'AccountController@update')->name('account.update');
 
     Route::get('search', 'HomeController@search')->name('search');
-    Route::get('quick-search', 'HomeController@quickSearch')->name('quick-search');
     Route::post('bbcode-preview', 'HomeController@bbcodePreview')->name('bbcode-preview');
     Route::resource('changelog', 'ChangelogController', ['only' => ['index', 'show']]);
     Route::get('download', 'HomeController@getDownload')->name('download');

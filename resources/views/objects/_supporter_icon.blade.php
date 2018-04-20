@@ -15,7 +15,10 @@
     You should have received a copy of the GNU Affero General Public License
     along with osu!web.  If not, see <http://www.gnu.org/licenses/>.
 --}}
-<div
-    class="js-react--beatmapset-panel"
-    data-beatmapset-panel="{{ json_encode(['beatmap' => json_item($entry, 'Beatmapset', ['beatmaps'])]) }}"
-></div>
+
+{{-- see also supporter-icon.coffee for react component --}}
+<span class="supporter-icon{{isset($smaller) && $smaller === true ? ' supporter-icon--smaller' : ''}} fa-stack" title="{{ trans('users.show.is_supporter') }}">
+    @if (isset($background) && $background === true) <i class="supporter-icon__bg fas fa-circle fa-stack-2x"></i> @endif
+    <i class="far fa-circle fa-stack-2x"></i>
+    <i class="supporter-icon__heart fas fa-heart fa-stack-1x"></i>
+</span>

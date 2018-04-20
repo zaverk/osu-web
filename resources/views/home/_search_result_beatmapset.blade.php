@@ -15,14 +15,11 @@
     You should have received a copy of the GNU Affero General Public License
     along with osu!web.  If not, see <http://www.gnu.org/licenses/>.
 --}}
-<a
-    class="nav-search-entry nav-search-entry--{{ $modifier }}"
-    href="{{ $url }}"
->
-    {{ $title }}
-
-    <div class="nav-search-entry__bullet nav-search-entry__bullet--hover">
-        <span class="fa fa-angle-left"></span>
+@foreach ($search->data() as $entry)
+    <div class="search-result-entry">
+        <div
+            class="js-react--beatmapset-panel"
+            data-beatmapset-panel="{{ json_encode(['beatmap' => json_item($entry, 'Beatmapset', ['beatmaps'])]) }}"
+        ></div>
     </div>
-    <div class="nav-search-entry__bullet nav-search-entry__bullet--normal"></div>
-</a>
+@endforeach
