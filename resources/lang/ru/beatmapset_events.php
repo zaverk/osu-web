@@ -40,11 +40,11 @@ return [
     ],
 
     'index' => [
-        'title' => 'Beatmapset Events',
+        'title' => 'События карты',
     ],
 
     'item' => [
-        'content' => 'Content',
-        'type' => 'Type',
+        'content' => 'Контент',
+        'type' => 'Тип',
     ],
 ];
