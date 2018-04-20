@@ -273,7 +273,7 @@ return [
             'description' => '<strong>обо мне!</strong> - это твоё личное редактируемое пространство в твоём профиле.',
             'edit_big' => 'Отредактируй меня!',
             'placeholder' => 'Введи контент этой страницы',
-            'restriction_info' => 'Ты должен иметь тег <a href='".route('store.products.show', 'supporter-tag')."' target='_blank'>osu!саппортера</a> для разблокировки данной особенности.',
+            'restriction_info' => "Ты должен иметь тег <a href='".route('store.products.show', 'supporter-tag')."' target='_blank'>osu!саппортера</a> для разблокировки данной особенности.",
         ],
         'post_count' => [
             '_' => 'Написал :link',
