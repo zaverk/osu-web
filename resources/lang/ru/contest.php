@@ -50,7 +50,7 @@ return [
     ],
     'vote' => [
         'list' => 'голосов',
-        'count' => '1 голос|:count голосов',
+        'count' => ':count голос|:count голоса|:count голосов',
     ],
     'dates' => [
         'ended' => 'Окончено :date',

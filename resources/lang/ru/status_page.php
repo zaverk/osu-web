@@ -62,7 +62,7 @@ return [
             'month' => 'месяц',
             'all_time' => 'всё время',
             'last_week' => 'последняя неделя',
-            'weeks_ago' => ':count неделю назад|:count недель назад',
+            'weeks_ago' => ':count неделю назад|:count недели назад|:count недель назад',
         ],
     ],
 ];

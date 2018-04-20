@@ -35,11 +35,11 @@ return [
         ],
 
         'votes_received' => [
-            'title_most' => 'Most upvoted by (last 3 months)',
+            'title_most' => 'Самые популярные от (за 3 месяца)',
         ],
 
         'votes_made' => [
-            'title_most' => 'Most upvoted (last 3 months)',
+            'title_most' => 'Самые популярные (за 3 месяца)',
         ],
     ],
 
@@ -126,7 +126,7 @@ return [
         ],
 
         'extra' => [
-            'followers' => '{1} 1 подписчик|[2,3,4] :count подписчика|[5,*] :count подписчиков',
+            'followers' => ':count подписчик|:count подписчика|:count подписчиков',
             'unranked' => 'Нет недавних игр',
 
             'achievements' => [

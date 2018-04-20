@@ -38,13 +38,16 @@ return [
         'deny_kudosu' => 'запретить кудосу',
         'edit' => 'изменить',
         'edited' => 'Последний раз изменён :editor в :update_time',
-        'message_placeholder' => 'Нажмите сюда для публикации',
+        'kudosu_denied' => 'Отказано от получения кудосу.',
+        'message_placeholder' => 'Начинайте вводить здесь',
+        'message_placeholder_deleted_beatmap' => 'Эта сложность была удалена и её нельзя обсуждать.',
         'message_type_select' => 'Выбрать тип комментария',
-        'reply_placeholder' => 'Введи тут ответ',
+        'reply_notice' => 'Нажмите Enter для ответа.',
+        'reply_placeholder' => 'Введите тут ответ',
         'require-login' => 'Войди для публикации или ответа', // Base text changed from "log" to "sign"
         'resolved' => 'Решено',
         'restore' => 'восстановить',
-        'title' => 'Обсуждения',
+        'title' => 'Отзывы',
 
         'collapse' => [
             'all-collapse' => 'Скрыть всё',
@@ -52,7 +55,7 @@ return [
         ],
 
         'empty' => [
-            'empty' => 'Нет обсуждения!',
+            'empty' => 'Нет отзывов!',
             'hidden' => 'Ни одно обсуждение не соответствует выбранному фильтру.',
         ],
 
@@ -62,32 +65,75 @@ return [
         ],
 
         'message_type' => [
+            'hype' => 'Хайпануть!',
+            'mapper_note' => 'Заметка',
             'praise' => 'Хвала',
             'problem' => 'Проблема',
             'suggestion' => 'Запрос',
         ],
 
         'mode' => [
+            'events' => 'История',
+            'general' => 'Общее :scope', // без понятия где используется
             'timeline' => 'График',
+            'scopes' => [
+                'general' => 'Эта сложность',
+                'generalAll' => 'Все сложности',
+            ],
         ],
 
         'new' => [
             'timestamp' => 'Временная отметка',
             'timestamp_missing' => 'нажмите ctrl-c в режиме редактирования для получения временной отметки и добавь его!',
-            'title' => 'Новое обсуждение',
+            'title' => 'Новый отзыв',
         ],
 
         'show' => [
             'title' => ':title сделанный :mapper',
         ],
 
+        'sort' => [
+            '_' => 'Отсортировано по:',
+            'created_at' => 'дате создания',
+            'timeline' => 'графику',
+            'updated_at' => 'дате обновления',
+        ],
+
         'stats' => [
             'deleted' => 'Удалено',
-            'mine' => 'Мои', // TODO: wut
+            'mapper_notes' => 'Заметки',
+            'mine' => 'Мои',
             'pending' => 'Ожидающий',
             'praises' => 'Похвалы',
             'resolved' => 'Решено',
+            'total' => 'Все',
         ],
+
+        'status-messages' => [
+            'approved' => 'Эта карта была одобрена :date!',
+            'graveyard' => 'Эта карта не обновлялась с :date и похоже, что автор её забросил...',
+            'loved' => 'Эта карта была признана "любимым" :date!',
+            'ranked' => 'Эта карта была ранкнута :date!',
+            'wip' => 'Заметьте: Эта карта была помечена незавершённой создателем.',
+        ],
+
+    ],
+
+    'hype' => [
+        'button' => 'Хайпануть карту!',
+        'button_done' => 'Уже хайпанута!',
+        'confirm' => 'Вы уверены? Это действие отберёт один из :n хайпов и не может быть отменено.',
+        'explanation' => 'Это сделает карту доступным для номинирования!',
+        'explanation_guest' => 'Войдите в аккаунт, чтобы сделать карту доступным для номинирования!',
+        'new_time' => 'Вы получите другой хайп :new_time.',
+        'remaining' => 'У вас осталось :remaining хайпа.',
+        'required_text' => 'Хайп: :current/:required',
+        'section_title' => 'Прогресс хайпа',
+        'title' => 'Хайпаните',
+    ],
+
+    'feedback' => [
+        'button' => 'Оставить отзыв',
     ],
 
     'nominations' => [
@@ -98,10 +144,14 @@ return [
         'incorrect_state' => 'Не удалось выполнить данную задачу, пробовал перезагрузить страницу?',
         'nominate' => 'Номинировать',
         'nominate_confirm' => 'Номинировать эту карту?',
+        'nominated_by' => 'номинирован :users',
         'qualified' => 'Если больше не будет выявлено каких-либо проблем, карта получит рейтинговый статус примерно в :date.',
         'qualified_soon' => 'Если больше не будет выявлено каких-либо проблем, карта получит рейтинговый статус очень скоро.',
         'required_text' => 'Номинации: :current/:required',
+        'reset_at' => 'Номинация сброшена :time_ago из-за новой проблемы в :discussion.',
+        'reset_confirm' => 'Вы уверены? Сообщение о новой проблеме сбросит статус номинации.',
         'title' => 'Статус номинации',
+        'unresolved_issues' => 'Вы должны решить все проблемы.',
     ],
 
     'listing' => [
@@ -111,6 +161,7 @@ return [
             'not-found' => 'нет результатов',
             'not-found-quote' => '... увы, ничего не найдено.',
             'filters' => [
+                'general' => 'Общее',
                 'mode' => 'Режим игры',
                 'status' => 'Статус',
                 'genre' => 'Жанр',
@@ -125,6 +176,10 @@ return [
         'source' => 'от :source',
         'load-more' => 'Загрузить ещё...',
     ],
+    'general' => [
+        'recommended' => 'рекомендуемая сложность',
+        'converts' => 'включать конвертированные карты',
+    ],
     'mode' => [
         'any' => 'Все',
         'osu' => 'osu!',
@@ -136,6 +191,7 @@ return [
         'any' => 'Все',
         'ranked-approved' => 'Рейтинговые и одобренные',
         'approved' => 'Одобренные',
+        'qualified' => 'Квалифицированные',
         'loved' => 'Любимые',
         'faves' => 'Избранные',
         'pending' => 'Ожидающие',
@@ -154,28 +210,29 @@ return [
         'hip-hop' => 'Хип-хоп',
         'electronic' => 'Электроника', // TODO: найти перевод лучше
     ],
-    'mods' => [ // Кажется, что перевод не нужен
-        'NF' => 'No Fail',
-        'EZ' => 'Easy Mode',
-        'HD' => 'Hidden',
-        'HR' => 'Hard Rock',
-        'SD' => 'Sudden Death',
-        'DT' => 'Double Time',
-        'Relax' => 'Relax',
-        'HT' => 'Half Time',
-        'NC' => 'Nightcore',
-        'FL' => 'Flashlight',
-        'SO' => 'Spun Out',
-        'AP' => 'Auto Pilot',
-        'PF' => 'Perfect',
+    'mods' => [
         '4K' => '4K',
         '5K' => '5K',
         '6K' => '6K',
         '7K' => '7K',
         '8K' => '8K',
-        'FI' => 'Fade In',
         '9K' => '9K',
+        'AP' => 'Auto Pilot',
+        'DT' => 'Double Time',
+        'EZ' => 'Easy Mode',
+        'FI' => 'Fade In',
+        'FL' => 'Flashlight',
+        'HD' => 'Hidden',
+        'HR' => 'Hard Rock',
+        'HT' => 'Half Time',
+        'NC' => 'Nightcore',
+        'NF' => 'No Fail',
         'NM' => 'No mods',
+        'PF' => 'Perfect',
+        'Relax' => 'Relax',
+        'SD' => 'Sudden Death',
+        'SO' => 'Spun Out',
+        'TD' => 'Touch Device',
     ],
     'language' => [
         'any' => 'Все',
