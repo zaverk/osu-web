@@ -26,6 +26,7 @@ return [
         'discussion_post_restore' => 'Модератор восстановил публикацию в обсуждении :discussion.',
         'discussion_restore' => 'Модератор восстановил обсуждение :discussion.',
         'disqualify' => 'Дисквалифицирована :user. Причина: :text.',
+        'disqualify_legacy' => 'Дисквалифицирована :user. Причина: :text.',
         'issue_reopen' => 'Проблема в :discussion вновь решена.',
         'issue_resolve' => 'Проблема :discussion отмечена как решенная.',
         'kudosu_allow' => 'Кудосу из обсуждения :discussion были удалены.',
@@ -33,10 +34,10 @@ return [
         'kudosu_gain' => 'Обсуждение :discussion от :user получило достаточно голосов для получения кудосу.',
         'kudosu_lost' => 'Обсуждение :discussion от :user потеряло голоса и присуждённые кудосу были удалены.',
         'kudosu_recalculate' => 'Кудосу за обсуждение :discussion были пересчитаны.',
-        'nominate' => 'Номинировано :user.',
+        'nominate' => 'Номинирован :user.',
         'nomination_reset' => 'Новая проблема в :discussion вызвало сброс номинации.',
-        'qualify' => 'Квалифицированна.',
-        'rank' => 'Ранкнута.',
+        'qualify' => 'Квалифицирован.',
+        'rank' => 'Ранкнут.',
     ],
 
     'index' => [
@@ -45,6 +46,7 @@ return [
 
     'item' => [
         'content' => 'Контент',
+        'discussion_deleted' => '[удалено]',
         'type' => 'Тип',
     ],
 ];

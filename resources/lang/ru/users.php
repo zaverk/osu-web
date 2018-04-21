@@ -100,6 +100,7 @@ return [
         'origin_country_age' => ':age лет, из :country',
         'origin_country' => 'Из :country',
         'page_description' => 'osu! - Всё, что вы хотели знать о :username!',
+        'previous_usernames' => 'также известен как',
         'plays_with' => 'Играет с :devices',
         'title' => 'Профиль :username',
 
@@ -228,6 +229,7 @@ return [
             ],
             'top_ranks' => [
                 'empty' => 'Никакой записи об удивительной производительности. :(',
+                'not_ranked' => 'Очки производительности выдаются только за ранкнутые карты.',
                 'pp' => ':amountpp',
                 'title' => 'Рейтинги',
                 'weighted_pp' => 'взвешено: :pp (:percentage)',
@@ -262,6 +264,7 @@ return [
             ],
         ],
         'info' => [
+            'discord' => 'Discord',
             'interests' => 'Интересы',
             'lastfm' => 'Last.fm',
             'location' => 'Текущее местоположение',

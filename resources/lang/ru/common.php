@@ -30,6 +30,8 @@ return [
 
     'buttons' => [
         'cancel' => 'Отмена',
+        'click_to_copy' => 'нажмите чтобы скопировать',
+        'click_to_copy_copied' => 'скопировано!',
         'delete' => 'Удалить',
         'permalink' => 'прямая ссылка',
         'permalink_copied' => 'ссылка скопирована',

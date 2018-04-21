@@ -51,6 +51,7 @@ return [
                 'user_occ' => 'профессия',
                 'user_twitter' => 'твиттер',
                 'user_website' => 'веб-сайт',
+                'user_discord' => 'discord',
             ],
         ],
 
