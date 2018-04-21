@@ -47,9 +47,9 @@ return [
             'user' => [
                 'user_from' => 'проживание',
                 'user_interests' => 'интересы',
-                'user_msnm' => 'скайп',
+                'user_msnm' => 'skype',
                 'user_occ' => 'профессия',
-                'user_twitter' => 'твиттер',
+                'user_twitter' => 'twitter',
                 'user_website' => 'веб-сайт',
                 'user_discord' => 'discord',
             ],
