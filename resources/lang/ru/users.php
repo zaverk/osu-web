@@ -95,7 +95,7 @@ return [
         'is_supporter' => 'osu!supporter',
         'joined_at' => 'Присоединился :date',
         'lastvisit' => 'Заходил :date',
-        'missingtext' => 'Возможно вы сделали опечатку! (или игрок  заблокирован)',
+        'missingtext' => 'Возможно, вы сделали опечатку! (или игрок заблокирован)',
         'origin_age' => ':age',
         'origin_country_age' => ':age лет, из :country',
         'origin_country' => 'Из :country',

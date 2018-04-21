@@ -84,7 +84,7 @@ return [
         'check' => 'Введите имя, чтобы проверить его доступность!',
         'checking' => 'Проверяем доступность имени :username...',
         'require_login' => [
-            '_' => 'ВЫ должны :link для смены ника!',
+            '_' => 'Вы должны :link для смены ника!',
             'link_text' => 'войти', // Base text changed from "log" to "sign"
         ],
     ],
