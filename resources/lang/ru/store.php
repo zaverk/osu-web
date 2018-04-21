@@ -69,7 +69,7 @@ return [
     'supporter_tag' => [
         'gift' => 'подарок для игрока',
         'require_login' => [
-            '_' => 'Ты должен :link для покупки osu!supporter тега!',
+            '_' => 'Вы должны :link для покупки osu!supporter тега!',
             'link_text' => 'войти', // Base text changed from "log" to "sign"
         ],
     ],
@@ -78,7 +78,7 @@ return [
         'check' => 'Введите имя, чтобы проверить его доступность!',
         'checking' => 'Проверяем доступность имени :username...',
         'require_login' => [
-            '_' => 'Ты должен :link для смены ника!',
+            '_' => 'ВЫ должны :link для смены ника!',
             'link_text' => 'войти', // Base text changed from "log" to "sign"
         ],
     ],

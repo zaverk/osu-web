@@ -21,7 +21,7 @@
 return [
     'header' => [
         'title' => 'статус',
-        'description' => 'что вообще происходит, чувак?',
+        'description' => 'что вообще происходит, ребят?',
     ],
 
     'incidents' => [
