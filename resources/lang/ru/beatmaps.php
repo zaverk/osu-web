@@ -65,8 +65,10 @@ return [
         ],
 
         'message_type' => [
+            'disqualify' => 'Дисквалифицировать',
             'hype' => 'Хайпануть!',
             'mapper_note' => 'Заметка',
+            'nomination_reset' => 'Сбросить номинацию',
             'praise' => 'Хвала',
             'problem' => 'Проблема',
             'suggestion' => 'Запрос',
@@ -148,10 +150,18 @@ return [
         'qualified' => 'Если больше нет проблем, карта получит ранкнутый статус примерно :date.',
         'qualified_soon' => 'Если больше нет проблем, карта получит ранкнутый статус очень скоро.',
         'required_text' => 'Номинации: :current/:required',
-        'reset_at' => 'Номинация сброшена :time_ago из-за новой проблемы в :discussion.',
-        'reset_confirm' => 'Вы уверены? Сообщение о новой проблеме сбросит статус номинации.',
+        'reset_message_deleted' => 'удалено',
         'title' => 'Статус номинации',
         'unresolved_issues' => 'Вы должны решить все проблемы.',
+
+        'reset_at' => [
+            'nomination_reset' => ':user сбросил прогресс номинаций :time_ago из-за новой проблемы :discussion (:message).',
+            'disqualify' => ':user дисквалифицировал :time_ago из-за новой проблемы :discussion (:message).',
+        ],
+
+        'reset_confirm' => [
+            'nomination_reset' => 'Вы уверены? Сообщение о новой проблеме сбросит статус номинации.',
+        ],
     ],
 
     'listing' => [

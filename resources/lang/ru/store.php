@@ -40,6 +40,12 @@ return [
 
     'discount' => 'вы сэкономите :percent%',
 
+    'mail' => [
+        'payment_completed' => [
+            'subject' => 'Мы получили ваш заказ в osu!store!',
+        ],
+    ],
+
     'order' => [
         'item' => [
             'display_name' => [
